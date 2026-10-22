@@ -33,7 +33,7 @@ Building a tag library for Freemarker, JSP or Velocity
 
 -----------------
 <dependency>
-  <groupId>org.apache.tiles</groupId>
+  <groupId>io.github.laurentschoelens.tiles</groupId>
   <artifactId>tiles-request-jsp</artifactId>
   <version>1.0</version>
 </dependency>
@@ -53,7 +53,7 @@ Building a tag library for Freemarker, JSP or Velocity
   
 -----------------
 <plugin>
-  <groupId>org.apache.tiles.autotag.plugin</groupId>
+  <groupId>io.github.laurentschoelens.tiles.autotag.plugin</groupId>
   <artifactId>maven-autotag-plugin</artifactId>
   <version>1.0</version>
   <executions>
@@ -63,7 +63,7 @@ Building a tag library for Freemarker, JSP or Velocity
       </goals>
       <configuration>
         <packageName>org.example.mytaglib.jsp</packageName>
-        <jspRuntime>org.apache.tiles.request.jsp.autotag.JspAutotagRuntime</jspRuntime>
+        <jspRuntime>io.github.laurentschoelens.tiles.request.jsp.autotag.JspAutotagRuntime</jspRuntime>
         <taglibURI>http://example.org/mytaglib</taglibURI>
       </configuration> 
     </execution>
@@ -93,13 +93,13 @@ Plugin configuration
   [packageName] the destination package for the generated classes.
   
   [freemarkerRuntime] the runtime implementation of TilesRequest to use for freemarker, for 
-  instance <<<org.apache.tiles.request.freemarker.autotag.FreemarkerAutotagRuntime>>>.
+  instance <<<io.github.laurentschoelens.tiles.request.freemarker.autotag.FreemarkerAutotagRuntime>>>.
   
   [jspRuntime] the runtime implementation of TilesRequest to use for JSP, for 
-  instance <<<org.apache.tiles.request.jsp.autotag.JSPAutotagRuntime>>>.
+  instance <<<io.github.laurentschoelens.tiles.request.jsp.autotag.JSPAutotagRuntime>>>.
   
   [velocityRuntime] the runtime implementation of TilesRequest to use for velocity, for 
-  instance <<<org.apache.tiles.request.velocity.autotag.VelocityAutotagRuntime>>>.
+  instance <<<io.github.laurentschoelens.tiles.request.velocity.autotag.VelocityAutotagRuntime>>>.
   
   [taglibURI] the URI to use for the JSP taglib.
   

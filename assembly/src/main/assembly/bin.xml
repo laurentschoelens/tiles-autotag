@@ -26,16 +26,16 @@
             <outputDirectory>/lib</outputDirectory>
             <outputFileNameMapping>${artifact.artifactId}-${artifact.version}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
             <excludes>
-                <exclude>org.apache.tiles:*</exclude>
-                <exclude>org.apache.tiles.autotag.plugin:*</exclude>
+                <exclude>io.github.laurentschoelens.tiles:*</exclude>
+                <exclude>io.github.laurentschoelens.tiles.autotag.plugin:*</exclude>
             </excludes>
         </dependencySet>
         <dependencySet>
             <outputDirectory>/</outputDirectory>
             <outputFileNameMapping>${artifact.artifactId}-${artifact.version}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
             <includes>
-                <include>org.apache.tiles:*</include>
-                <include>org.apache.tiles.autotag.plugin:*</include>
+                <include>io.github.laurentschoelens.tiles:*</include>
+                <include>io.github.laurentschoelens.tiles.autotag.plugin:*</include>
             </includes>
         </dependencySet>
     </dependencySets>

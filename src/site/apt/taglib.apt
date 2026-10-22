@@ -44,12 +44,12 @@ Creating a generic tag library
   
   ** the first parameters may be anything you want; at runtime they will contain the values 
   assigned to the attributes of the tag in the template. Those parameters may be annotated with
-  <<<org.apache.tiles.autotag.core.runtime.annotation.Parameter>>> in order to specify the name of
+  <<<annotation.runtime.core.io.github.laurentschoelens.tiles.autotag.Parameter>>> in order to specify the name of
   the attribute, the default value, or to make the parameter mandatory.
   
-  ** then, one parameter of type <<<org.apache.tiles.request.Request>>>.
+  ** then, one parameter of type <<<io.github.laurentschoelens.tiles.request.Request>>>.
   
-  ** and finally, one optional parameter of type <<<org.apache.tiles.autotag.core.runtime.ModelBody>>>;
+  ** and finally, one optional parameter of type <<<runtime.core.io.github.laurentschoelens.tiles.autotag.ModelBody>>>;
   at runtime it will contain the contents of the tag in the template.
   
   For instance:
@@ -74,7 +74,7 @@ public class MyTagModel {
   
 -----------------
 <plugin>
-  <groupId>org.apache.tiles.autotag.plugin</groupId>
+  <groupId>io.github.laurentschoelens.tiles.autotag.plugin</groupId>
   <artifactId>maven-autotag-plugin</artifactId>
   <version>1.0</version>
   <executions>

@@ -20,13 +20,13 @@
  * under the License.
  */
  -->
-<org.apache.tiles.autotag.model.TemplateSuite>
+<io.github.laurentschoelens.tiles.autotag.model.TemplateSuite>
   <name>test</name>
   <templateClasses class="linked-hash-map">
     <entry>
-      <string>org.apache.tiles.autotag.plugin.internal.ExampleExecutableModel</string>
-      <org.apache.tiles.autotag.model.TemplateClass>
-        <name>org.apache.tiles.autotag.plugin.internal.ExampleExecutableModel</name>
+      <string>io.github.laurentschoelens.tiles.autotag.plugin.internal.ExampleExecutableModel</string>
+      <io.github.laurentschoelens.tiles.autotag.model.TemplateClass>
+        <name>io.github.laurentschoelens.tiles.autotag.plugin.internal.ExampleExecutableModel</name>
         <tagName>exampleExecutable</tagName>
         <tagClassPrefix>ExampleExecutable</tagClassPrefix>
         <documentation>Example executable template.</documentation>
@@ -36,42 +36,42 @@
           <parameters class="linked-hash-map">
             <entry>
               <string>one</string>
-              <org.apache.tiles.autotag.model.TemplateParameter>
+              <io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
                 <name>one</name>
                 <exportedName>one</exportedName>
                 <documentation>Parameter one.</documentation>
                 <type>java.lang.String</type>
                 <required>false</required>
-              </org.apache.tiles.autotag.model.TemplateParameter>
+              </io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
             </entry>
             <entry>
               <string>two</string>
-              <org.apache.tiles.autotag.model.TemplateParameter>
+              <io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
                 <name>two</name>
                 <exportedName>two</exportedName>
                 <documentation>Parameter two.</documentation>
                 <type>int</type>
                 <required>false</required>
-              </org.apache.tiles.autotag.model.TemplateParameter>
+              </io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
             </entry>
             <entry>
               <string>request</string>
-              <org.apache.tiles.autotag.model.TemplateParameter>
+              <io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
                 <name>request</name>
                 <exportedName>request</exportedName>
                 <documentation>The request.</documentation>
-                <type>org.apache.tiles.request.Request</type>
+                <type>io.github.laurentschoelens.tiles.request.Request</type>
                 <required>false</required>
-              </org.apache.tiles.autotag.model.TemplateParameter>
+              </io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
             </entry>
           </parameters>
         </executeMethod>
-      </org.apache.tiles.autotag.model.TemplateClass>
+      </io.github.laurentschoelens.tiles.autotag.model.TemplateClass>
     </entry>
     <entry>
-      <string>org.apache.tiles.autotag.plugin.internal.ExampleModel</string>
-      <org.apache.tiles.autotag.model.TemplateClass>
-        <name>org.apache.tiles.autotag.plugin.internal.ExampleModel</name>
+      <string>io.github.laurentschoelens.tiles.autotag.plugin.internal.ExampleModel</string>
+      <io.github.laurentschoelens.tiles.autotag.model.TemplateClass>
+        <name>io.github.laurentschoelens.tiles.autotag.plugin.internal.ExampleModel</name>
         <tagName>example</tagName>
         <tagClassPrefix>Example</tagClassPrefix>
         <documentation>Example start/stop template.</documentation>
@@ -81,52 +81,52 @@
           <parameters class="linked-hash-map">
             <entry>
               <string>one</string>
-              <org.apache.tiles.autotag.model.TemplateParameter>
+              <io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
                 <name>one</name>
                 <exportedName>one</exportedName>
                 <documentation>Parameter one.</documentation>
                 <type>java.lang.String</type>
                 <required>false</required>
-              </org.apache.tiles.autotag.model.TemplateParameter>
+              </io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
             </entry>
             <entry>
               <string>two</string>
-              <org.apache.tiles.autotag.model.TemplateParameter>
+              <io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
                 <name>two</name>
                 <exportedName>two</exportedName>
                 <documentation>Parameter two.</documentation>
                 <type>int</type>
                 <required>false</required>
-              </org.apache.tiles.autotag.model.TemplateParameter>
+              </io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
             </entry>
             <entry>
               <string>request</string>
-              <org.apache.tiles.autotag.model.TemplateParameter>
+              <io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
                 <name>request</name>
                 <exportedName>request</exportedName>
                 <documentation>The request.</documentation>
-                <type>org.apache.tiles.request.Request</type>
+                <type>io.github.laurentschoelens.tiles.request.Request</type>
                 <required>false</required>
-              </org.apache.tiles.autotag.model.TemplateParameter>
+              </io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
             </entry>
             <entry>
               <string>modelBody</string>
-              <org.apache.tiles.autotag.model.TemplateParameter>
+              <io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
                 <name>modelBody</name>
                 <exportedName>modelBody</exportedName>
                 <documentation>The model body.</documentation>
-                <type>org.apache.tiles.autotag.core.runtime.ModelBody</type>
+                <type>io.github.laurentschoelens.tiles.autotag.core.runtime.ModelBody</type>
                 <required>false</required>
-              </org.apache.tiles.autotag.model.TemplateParameter>
+              </io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
             </entry>
           </parameters>
         </executeMethod>
-      </org.apache.tiles.autotag.model.TemplateClass>
+      </io.github.laurentschoelens.tiles.autotag.model.TemplateClass>
     </entry>
     <entry>
-      <string>org.apache.tiles.autotag.plugin.internal.AnnotatedExampleModel</string>
-      <org.apache.tiles.autotag.model.TemplateClass>
-        <name>org.apache.tiles.autotag.plugin.internal.AnnotatedExampleModel</name>
+      <string>io.github.laurentschoelens.tiles.autotag.plugin.internal.AnnotatedExampleModel</string>
+      <io.github.laurentschoelens.tiles.autotag.model.TemplateClass>
+        <name>io.github.laurentschoelens.tiles.autotag.plugin.internal.AnnotatedExampleModel</name>
         <tagName>annotatedExample</tagName>
         <tagClassPrefix>AnnotatedExample</tagClassPrefix>
         <documentation>Example start/stop template.</documentation>
@@ -136,48 +136,48 @@
           <parameters class="linked-hash-map">
             <entry>
               <string>one</string>
-              <org.apache.tiles.autotag.model.TemplateParameter>
+              <io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
                 <name>one</name>
                 <exportedName>alternateOne</exportedName>
                 <documentation>Parameter one.</documentation>
                 <type>java.lang.String</type>
                 <defaultValue>hello</defaultValue>
                 <required>true</required>
-              </org.apache.tiles.autotag.model.TemplateParameter>
+              </io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
             </entry>
             <entry>
               <string>two</string>
-              <org.apache.tiles.autotag.model.TemplateParameter>
+              <io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
                 <name>two</name>
                 <exportedName>two</exportedName>
                 <documentation>Parameter two.</documentation>
                 <type>int</type>
                 <required>false</required>
-              </org.apache.tiles.autotag.model.TemplateParameter>
+              </io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
             </entry>
             <entry>
               <string>request</string>
-              <org.apache.tiles.autotag.model.TemplateParameter>
+              <io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
                 <name>request</name>
                 <exportedName>request</exportedName>
                 <documentation>The request.</documentation>
-                <type>org.apache.tiles.request.Request</type>
+                <type>io.github.laurentschoelens.tiles.request.Request</type>
                 <required>false</required>
-              </org.apache.tiles.autotag.model.TemplateParameter>
+              </io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
             </entry>
             <entry>
               <string>modelBody</string>
-              <org.apache.tiles.autotag.model.TemplateParameter>
+              <io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
                 <name>modelBody</name>
                 <exportedName>modelBody</exportedName>
                 <documentation>The model body.</documentation>
-                <type>org.apache.tiles.autotag.core.runtime.ModelBody</type>
+                <type>io.github.laurentschoelens.tiles.autotag.core.runtime.ModelBody</type>
                 <required>false</required>
-              </org.apache.tiles.autotag.model.TemplateParameter>
+              </io.github.laurentschoelens.tiles.autotag.model.TemplateParameter>
             </entry>
           </parameters>
         </executeMethod>
-      </org.apache.tiles.autotag.model.TemplateClass>
+      </io.github.laurentschoelens.tiles.autotag.model.TemplateClass>
     </entry>
   </templateClasses>
-</org.apache.tiles.autotag.model.TemplateSuite>
+</io.github.laurentschoelens.tiles.autotag.model.TemplateSuite>

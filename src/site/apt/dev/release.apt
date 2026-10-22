@@ -279,7 +279,7 @@ Available in binary and source distribution.
 http://tiles.apache.org/download.html
 
 It is also available in the central Maven repository under Group ID
-"org.apache.tiles".
+"io.github.laurentschoelens.tiles".
 
 The 1.x series of the Apache Tiles Autotag framework has a minimum
 requirement of the following specification versions:

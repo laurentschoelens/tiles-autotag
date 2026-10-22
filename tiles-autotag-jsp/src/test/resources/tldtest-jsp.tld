@@ -20,7 +20,7 @@
       ]]>
       </description>
       <name>doStuff</name>
-      <tag-class>org.apache.tiles.autotag.jsp.test.DoStuffTag</tag-class>
+      <tag-class>io.github.laurentschoelens.tiles.autotag.jsp.test.DoStuffTag</tag-class>
       <body-content>scriptless</body-content>
       <attribute>
          <description>
@@ -63,7 +63,7 @@
       ]]>
       </description>
       <name>doStuffNoBody</name>
-      <tag-class>org.apache.tiles.autotag.jsp.test.DoStuffNoBodyTag</tag-class>
+      <tag-class>io.github.laurentschoelens.tiles.autotag.jsp.test.DoStuffNoBodyTag</tag-class>
       <body-content>empty</body-content>
       <attribute>
          <description>
