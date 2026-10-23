@@ -2,7 +2,7 @@
 
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
-or more contributor license agreements.  See the NOTICE file
+or more contributor license agreements. See the NOTICE file
 distributed with this work for additional information
 regarding copyright ownership.  The ASF licenses this file
 to you under the Apache License, Version 2.0 (the
@@ -24,7 +24,7 @@ under the License.
     <parent>
         <groupId>io.github.laurentschoelens.tiles</groupId>
         <artifactId>tiles-master</artifactId>
-        <version>8-SNAPSHOT</version>
+        <version>10</version>
     </parent>
 
     <!-- temporary only while parent pom is snapshot -->
@@ -46,13 +46,15 @@ under the License.
     <name>Autotags</name>
     <description>Automatic generation of tags.</description>
     <url>http://tiles.apache.org/tiles-autotag/</url>
+
     <scm>
-        <connection>scm:svn:http://svn.apache.org/repos/asf/tiles/autotag/trunk/</connection>
-        <developerConnection>scm:svn:https://svn.apache.org/repos/asf/tiles/autotag/trunk/</developerConnection>
-        <url>http://svn.apache.org/viewvc/tiles/autotag/trunk/</url>
+        <connection>scm:git:https://github.com/laurentschoelens/tiles-autotag.git</connection>
+        <developerConnection>scm:git:https://github.com/laurentschoelens/tiles-autotag.git</developerConnection>
+        <url>https://github.com/laurentschoelens/tiles-autotag</url>
+        <tag>HEAD</tag>
     </scm>
     <issueManagement>
-        <system>JIRA</system>
+        <system>GITHUB</system>
         <url>https://issues.apache.org/jira/browse/AUTOTAG</url>
         <!-- dev@tiles.apache.org :: this line satisfies INFRA-3329 -->
     </issueManagement>
@@ -88,7 +90,7 @@ under the License.
             <dependency>
                 <groupId>org.easymock</groupId>
                 <artifactId>easymock</artifactId>
-                <version>5.1.0</version>
+                <version>5.7.0</version>
                 <scope>test</scope>
             </dependency>
             <dependency>

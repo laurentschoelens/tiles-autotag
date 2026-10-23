@@ -2,7 +2,7 @@
  * $Id$
  *
  * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
+ * or more contributor license agreements. See the NOTICE file
  * distributed with this work for additional information
  * regarding copyright ownership.  The ASF licenses this file
  * to you under the Apache License, Version 2.0 (the
@@ -25,6 +25,8 @@ package io.github.laurentschoelens.tiles.autotag.core.runtime;
  * The implementations are expected to provide a default constructor,
  * and to implement another interface that can be used to provide the
  * parameters needed to build the actual request object.
+ *
+ * @param <R> The type of the request.
  */
 public interface AutotagRuntime<R> {
     /**
@@ -44,7 +46,9 @@ public interface AutotagRuntime<R> {
     /**
      * Extracts a parameter from the tag.
      * @param name The name of the parameter.
+     * @param type The type of the parameter.
      * @param defaultValue The default value if none is specified.
+     * @param <T> The type of the parameter.
      * @return The value of the parameter.
      */
     <T> T getParameter(String name, Class<T> type, T defaultValue);
