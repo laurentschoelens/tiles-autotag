@@ -117,7 +117,7 @@ under the License.
   		<plugins>
 	      <plugin>
 	        <artifactId>maven-plugin-plugin</artifactId>
-	        <version>3.7.1</version>
+	        <version>3.16.0</version>
 	        <configuration>
 	          <!-- see http://jira.codehaus.org/browse/MNG-5346 -->
 	          <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
