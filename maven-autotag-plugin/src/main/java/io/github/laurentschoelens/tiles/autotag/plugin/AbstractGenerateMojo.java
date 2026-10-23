@@ -96,25 +96,23 @@ public abstract class AbstractGenerateMojo extends AbstractMojo {
 
 	OutputLocator classesOutputLocator;
 	OutputLocator resourcesOutputLocator;
-	
+
     /** {@inheritDoc} */
     public void execute() throws MojoExecutionException {
         try {
         	TemplateSuite suite;
         	URLConnection templateSuite = findTemplateSuiteDescriptor();
         	long lastModified = templateSuite.getLastModified();
-        	InputStream stream = templateSuite.getInputStream();
-            try {
-	            XStream xstream = new XStream(new SunUnsafeReflectionProvider());
-	            xstream.allowTypesByWildcard(new String[] { "io.github.laurentschoelens.tiles.autotag.model.*" });
-	            suite = (TemplateSuite) xstream.fromXML(stream);
-            } finally {
-	            stream.close();
+            try (InputStream stream = templateSuite.getInputStream()) {
+                XStream xstream = new XStream(new SunUnsafeReflectionProvider());
+                xstream.allowTypesByWildcard(new String[]{"io.github.laurentschoelens.tiles.autotag.model.*"});
+                suite = (TemplateSuite) xstream.fromXML(stream);
             }
             classesOutputLocator = new MavenOutputLocator(classesOutputDirectory, lastModified);
             resourcesOutputLocator = new MavenOutputLocator(resourcesOutputDirectory, lastModified);
             Properties props = new Properties();
-            InputStream propsStream = getClass().getResourceAsStream("/io/github/laurentschoelens/tiles/autotag/velocity.properties");
+            InputStream propsStream = getClass().getResourceAsStream(
+					"/io/github/laurentschoelens/tiles/autotag/velocity.properties");
             props.load(propsStream);
             propsStream.close();
             TemplateGenerator generator = createTemplateGeneratorFactory(
