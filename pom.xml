@@ -27,18 +27,6 @@ under the License.
         <version>10</version>
     </parent>
 
-    <!-- temporary only while parent pom is snapshot -->
-  <repositories>
-    <repository>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <id>apache.snapshots</id>
-      <name>Apache Snapshot Repository</name>
-      <url>https://repository.apache.org/snapshots</url>
-    </repository>
-  </repositories>
-
     <groupId>io.github.laurentschoelens.tiles</groupId>
     <artifactId>tiles-autotag</artifactId>
     <version>2.0-SNAPSHOT</version>
@@ -55,8 +43,7 @@ under the License.
     </scm>
     <issueManagement>
         <system>GITHUB</system>
-        <url>https://issues.apache.org/jira/browse/AUTOTAG</url>
-        <!-- dev@tiles.apache.org :: this line satisfies INFRA-3329 -->
+        <url>https://github.com/laurentschoelens/tiles-autotag/issues</url>
     </issueManagement>
 
     <modules>
@@ -68,12 +55,6 @@ under the License.
         <module>maven-autotag-plugin</module>
         <module>assembly</module>
     </modules>
-    <distributionManagement>
-        <site>
-            <id>apache-site</id>
-            <url>scm:svn:https://svn.apache.org/repos/asf/tiles/site/staging/tiles-autotag</url>
-        </site>
-    </distributionManagement>
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -115,18 +96,6 @@ under the License.
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <build>
-        <plugins>
-            <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-scm-publish-plugin</artifactId>
-              <extensions>true</extensions>
-                <configuration>
-                    <pubScmUrl>scm:svn:https://svn.apache.org/repos/asf/tiles/site/staging/tiles-autotag</pubScmUrl>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
     <properties>
         <maven.javadoc.failOnError>false</maven.javadoc.failOnError> <!-- remove with master-8 -->
@@ -139,9 +108,6 @@ under the License.
                 <plugins>
                     <plugin>
                         <artifactId>maven-install-plugin</artifactId>
-                        <configuration>
-                            <createChecksum>true</createChecksum>
-                        </configuration>
                     </plugin>
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
