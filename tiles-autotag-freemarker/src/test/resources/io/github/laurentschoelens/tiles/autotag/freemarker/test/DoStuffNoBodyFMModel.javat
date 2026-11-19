@@ -6,7 +6,7 @@ package io.github.laurentschoelens.tiles.autotag.freemarker.test;
 import java.io.IOException;
 import java.util.Map;
 
-import runtime.core.io.github.laurentschoelens.tiles.autotag.AutotagRuntime;
+import io.github.laurentschoelens.tiles.autotag.core.runtime.AutotagRuntime;
 
 import freemarker.core.Environment;
 import freemarker.template.TemplateDirectiveBody;

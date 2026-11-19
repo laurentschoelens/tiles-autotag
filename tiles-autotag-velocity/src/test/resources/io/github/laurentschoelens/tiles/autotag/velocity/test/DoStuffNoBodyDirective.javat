@@ -6,7 +6,7 @@ package io.github.laurentschoelens.tiles.autotag.velocity.test;
 import java.io.IOException;
 import java.io.Writer;
 
-import runtime.core.io.github.laurentschoelens.tiles.autotag.AutotagRuntime;
+import io.github.laurentschoelens.tiles.autotag.core.runtime.AutotagRuntime;
 import org.apache.velocity.context.InternalContextAdapter;
 import org.apache.velocity.runtime.directive.Directive;
 import org.apache.velocity.runtime.parser.node.Node;

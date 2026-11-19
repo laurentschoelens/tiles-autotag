@@ -26,9 +26,9 @@ import java.io.IOException;
 import java.io.Writer;
 
 #if(${clazz.hasBody()})
-import runtime.core.io.github.laurentschoelens.tiles.autotag.ModelBody;
+import io.github.laurentschoelens.tiles.autotag.core.runtime.ModelBody;
 #end
-import runtime.core.io.github.laurentschoelens.tiles.autotag.AutotagRuntime;
+import io.github.laurentschoelens.tiles.autotag.core.runtime.AutotagRuntime;
 import org.apache.velocity.context.InternalContextAdapter;
 import org.apache.velocity.runtime.directive.Directive;
 import org.apache.velocity.runtime.parser.node.Node;
