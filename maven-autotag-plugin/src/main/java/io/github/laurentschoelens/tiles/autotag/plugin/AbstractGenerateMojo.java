@@ -27,10 +27,14 @@ import java.io.OutputStream;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.net.URLConnection;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
+import com.thoughtworks.xstream.security.NoTypePermission;
+import com.thoughtworks.xstream.security.NullPermission;
+import com.thoughtworks.xstream.security.PrimitiveTypePermission;
 import org.apache.maven.model.Resource;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -104,8 +108,17 @@ public abstract class AbstractGenerateMojo extends AbstractMojo {
         	URLConnection templateSuite = findTemplateSuiteDescriptor();
         	long lastModified = templateSuite.getLastModified();
             try (InputStream stream = templateSuite.getInputStream()) {
-                XStream xstream = new XStream(new SunUnsafeReflectionProvider());
-                xstream.allowTypesByWildcard(new String[]{"io.github.laurentschoelens.tiles.autotag.model.*"});
+                XStream xstream = new XStream();
+				xstream.addPermission(NoTypePermission.NONE);
+
+				xstream.addPermission(NullPermission.NULL);
+				xstream.addPermission(PrimitiveTypePermission.PRIMITIVES);
+				xstream.allowTypeHierarchy(Collection.class);
+				xstream.allowTypeHierarchy(Map.class);
+				xstream.allowTypes(new Class[]{String.class});
+				xstream.allowTypesByWildcard(new String[]{
+					"io.github.laurentschoelens.tiles.autotag.model.*"
+				});
                 suite = (TemplateSuite) xstream.fromXML(stream);
             }
             classesOutputLocator = new MavenOutputLocator(classesOutputDirectory, lastModified);
