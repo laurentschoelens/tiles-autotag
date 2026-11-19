@@ -98,7 +98,8 @@ under the License.
     </dependencyManagement>
 
     <properties>
-        <maven.javadoc.failOnError>false</maven.javadoc.failOnError> <!-- remove with master-8 -->
+        <central.deployment.basename>tiles-autotag</central.deployment.basename>
+        <maven.javadoc.failOnError>false</maven.javadoc.failOnError>
     </properties>
 
     <profiles>
