@@ -25,6 +25,7 @@ package io.github.laurentschoelens.tiles.autotag.core.runtime;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import io.github.laurentschoelens.tiles.autotag.core.runtime.util.NullWriter;
@@ -40,7 +41,7 @@ public abstract class AbstractModelBody implements ModelBody {
      * PATTERN.
      */
     // precompiled the pattern to avoid compiling on every method call
-    private static final Pattern PATTERN = Pattern.compile("^\\s*|\\s*$");
+    private static final Pattern PATTERN = Pattern.compile("^\\s*+(\\S(?:.*\\S)?)\\s*$");
 
     /**
      * The default writer to use.
@@ -71,8 +72,10 @@ public abstract class AbstractModelBody implements ModelBody {
         }
         String body = writer.toString();
         if (body != null) {
-            body = PATTERN.matcher(body).replaceAll("");
-            if (body.length() <= 0) {
+            final Matcher matcher = PATTERN.matcher(body);
+            if (matcher.matches()) {
+                body = matcher.group(1);
+            } else {
                 body = null;
             }
         }
